@@ -6,6 +6,6 @@ meta:
 build:
   requirementsPath: requirements.txt
 run:
-  command: gunicorn app.wsgi:application --bind 0.0.0.0:80 && python manage.py makemigrations && python manage.py migrate && python manage.py loaddata fixtures/goods/categories.json && python manage.py loaddata fixtures/goods/products.json
+  command: python manage.py makemigrations && python manage.py migrate && python manage.py loaddata fixtures/goods/categories.json && python manage.py loaddata fixtures/goods/products.json && gunicorn app.wsgi:application --bind 0.0.0.0:80
   persistenceMount: /data
   containerPort: "80"
