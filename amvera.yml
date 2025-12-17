@@ -6,6 +6,6 @@ meta:
 build:
   requirementsPath: requirements.txt
 run:
-  command: gunicorn app.wsgi:application  --bind 0.0.0.0:80
+  command: gunicorn --bind 0.0.0.0:80 django-project.app.wsgi:application
   persistenceMount: /data
   containerPort: "80"
