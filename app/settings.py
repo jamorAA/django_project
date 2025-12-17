@@ -89,7 +89,7 @@ WSGI_APPLICATION = 'app.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
+        'ENGINE': 'ghcr.io/cloudnative-pg/postgresql:17.5',
         'NAME': 'store',
         'USER': 'store',
         'PASSWORD': '4444',
