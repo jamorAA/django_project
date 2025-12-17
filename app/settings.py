@@ -29,7 +29,7 @@ SECRET_KEY = 'django-insecure-ld)8k$gfoow^#9-6mm@palg6l9d)&l!5ng#m2@=msxhq353g#2
 DEBUG = False
 
 ALLOWED_HOSTS = ['django-project-jamorant.amvera.io', '127.0.0.1']
-CSRF_TRUSTED_ORIGINS = ['http://django-project-jamorant.amvera.io', 'https://django-project-jamorant.amvera.io']
+CSRF_TRUSTED_ORIGINS = ['http://django-project-jamorant.amvera.io', 'https://django-project-jamorant.amvera.io', '0.0.0.0']
 
 
 # Application definition
@@ -136,9 +136,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [
-    BASE_DIR / 'static'
-    ]
+STATIC_ROOT = BASE_DIR / 'static'
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 MEDIA_URL = 'media/'
 

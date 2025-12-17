@@ -28,7 +28,7 @@ urlpatterns = [
     path('user/', include('users.urls', namespace='user')),
     path('cart/', include('carts.urls', namespace='cart')),
     path('orders/', include('orders.urls', namespace='orders')),
-] + static(settings.STATIC_URL, document_root=settings.STATICFILES_DIRS[0])
+]
 
 if settings.DEBUG:
     urlpatterns += [
