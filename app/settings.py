@@ -91,7 +91,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'store',
-        'USER': 'store',
+        'USER': 'postgres',
         'PASSWORD': '4444',
         'HOST': 'amvera-jamorant-cnpg-db-rw'
     }
