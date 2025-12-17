@@ -93,8 +93,7 @@ DATABASES = {
         'NAME': 'store',
         'USER': 'store',
         'PASSWORD': '4444',
-        'HOST': 'amvera-jamorant-cnpg-db-rw',
-        'PORT': '5432',
+        'HOST': 'amvera-jamorant-cnpg-db-rw'
     }
 }
 
